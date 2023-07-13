@@ -1,6 +1,6 @@
 # Messenger-bot-v3
 <h1 align="center">👋 Hello! I'am Naomi!</h1>
-<h3 align="center">ㅤWelcome To File Bot Of messenger bot <h1> 
+<h3 align="center"> Welcome to the File Bot for Messenger Bot. <h1> 
   <h1 align="center"> This bot file was re-made and re-fixed by Naomi </h1> 
   <h3 align="center"> haluh :> </h1> 
   <hr> 
