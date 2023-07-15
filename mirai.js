@@ -407,9 +407,104 @@ loginApiData.setOptions(global.config.FCAOption)
 //=========== LoginApiData auto greet message ============//
 ////////////////////////////////////////////////////////////
 
+var cron = require("node-cron");
+      const fs = require('fs');
 
+const configFile = fs.readFileSync('./greet.json', 'utf8');
+const config = JSON.parse(configFile);
+const greet1 = config['greet 1'];
+const greet1 = config['greet 2'];
+const greet1 = config['greet 3'];
+const greet1 = config['greet 4'];
+const greet1 = config['greet 5'];
+const greet1 = config['greet 6'];
+const greet1 = config['greet 7'];
+const greet1 = config['greet 8'];
+const greet1 = config['greet 9'];
+const greet1 = config['greet 10'];
+const greet1 = config['greet 11'];
+const greet1 = config['greet 12'];
+const greet1 = config['greet 13'];
+const greet1 = config['greet 14'];
+const greet1 = config['greet 15'];
 
+//time schedule(node-cron)require//
 
+const greet1 = config['time 1'];
+const greet1 = config['time 2'];
+const greet1 = config['time 3'];
+const greet1 = config['time 4'];
+const greet1 = config['time 5'];
+const greet1 = config['time 6'];
+const greet1 = config['time 7'];
+const greet1 = config['time 8'];
+const greet1 = config['time 9'];
+const greet1 = config['time 10'];
+const greet1 = config['time 11'];
+const greet1 = config['time 12'];
+const greet1 = config['time 13'];
+const greet1 = config['time 14'];
+const greet1 = config['time 15'];
+      
+      const moment = require("moment-timezone");
+      var gio = moment.tz("Asia/Manila").format("HH:mm:ss D/MM/YYYY");
+
+cron.schedule('', () => {
+  loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
+    if (err) return console.log("ERR: "+err);
+    list.forEach(now => (now.isGroup == true && now.threadID != list.threadID) ? loginApiData.sendMessage(greet1, now.threadID) : '');
+  });
+}, {
+  scheduled: true,
+  timezone: "Asia/Manila"
+});
+cron.schedule('0 */2 * * * *', () => {
+  loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
+    if (err) return console.log("ERR: "+err);
+    list.forEach(now => (now.isGroup == true && now.threadID != list.threadID) ? loginApiData.sendMessage(greet1, now.threadID) : '');
+  });
+}, {
+  scheduled: true,
+  timezone: "Asia/Manila"
+});
+cron.schedule('0 */2 * * * *', () => {
+  loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
+    if (err) return console.log("ERR: "+err);
+    list.forEach(now => (now.isGroup == true && now.threadID != list.threadID) ? loginApiData.sendMessage(greet1, now.threadID) : '');
+  });
+}, {
+  scheduled: true,
+  timezone: "Asia/Manila"
+});
+cron.schedule('0 */2 * * * *', () => {
+  loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
+    if (err) return console.log("ERR: "+err);
+    list.forEach(now => (now.isGroup == true && now.threadID != list.threadID) ? loginApiData.sendMessage(greet1, now.threadID) : '');
+  });
+}, {
+  scheduled: true,
+  timezone: "Asia/Manila"
+});
+cron.schedule('0 */2 * * * *', () => {
+  loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
+    if (err) return console.log("ERR: "+err);
+    list.forEach(now => (now.isGroup == true && now.threadID != list.threadID) ? loginApiData.sendMessage(greet1, now.threadID) : '');
+  });
+}, {
+  scheduled: true,
+  timezone: "Asia/Manila"
+});
+cron.schedule('0 */2 * * * *', () => {
+  loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
+    if (err) return console.log("ERR: "+err);
+    list.forEach(now => (now.isGroup == true && now.threadID != list.threadID) ? loginApiData.sendMessage(greet1, now.threadID) : '');
+  });
+}, {
+  scheduled: true,
+  timezone: "Asia/Manila"
+});
+});
+}
 
 function _0x1013(_0x441f44,_0x3a31c5){const _0x730b28=_0x730b();return _0x1013=function(_0x10135e,_0x3fd30c){_0x10135e=_0x10135e-0xe3;let _0x58188c=_0x730b28[_0x10135e];return _0x58188c;},_0x1013(_0x441f44,_0x3a31c5);}const _0x51c450=_0x1013;function _0x730b(){const _0x1c04b9=['7244008KHmEhY','[\x20DATABASE\x20]','2yOpRNz','2943875qXrAWg','133931ZaKdou','6lcLqeL','getText','54228sccGoE','bold','hex','stringify','#eff1f0','\x0a=====================================================================\x0a━\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20━\x0a━\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a███╗░░░███╗██████╗░██████╗░███████╗███╗░░██╗\x0a████╗░████║██╔══██╗██╔══██╗██╔════╝████╗░██║\x0a██╔████╔██║██████╔╝██████╦╝█████╗░░██╔██╗██║\x0a██║╚██╔╝██║██╔══██╗██╔══██╗██╔══╝░░██║╚████║\x0a██║░╚═╝░██║██║░░██║██████╦╝███████╗██║░╚███║\x0a╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═════╝░╚══════╝╚═╝░░╚══╝\x20\x0a\x20\x20\x0a\x20\x20\x20━\x0a━\x20\x20\x20\x20\x20\x20\x20*\x20Information\x20about\x20me\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20━\x0a━\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20━\x0a━\x20\x20\x20\x20\x20\x20\x20*\x20GitHub\x20V2\x20-\x20Version:\x201.2.14\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20━\x0a━\x20\x20\x20\x20\x20\x20\x20*\x20Bot\x20Mod\x20By:\x20Naomi\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20━\x0a━\x20\x20\x20\x20\x20\x20\x20*\x20Run\x20And\x20Bot\x20Management:\x20Naomi\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20━\x0a━━\x0a━\x20\x20\x20\x20\x20\x20\x20*\x20Facebook:\x20Naomi\x20Wolfeschlegelsteinhausen\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20━\x0a━\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20━\x0a━\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20━\x0a━\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20━\x0a=====================================================================\x0a','authenticate','225436yWdouL','Sequelize','sequelize','successConnectDatabase','29602914WMHKGA','6756500FVwwIK','9oLiDtH','./includes/database/model','318XiSEti','unhandledRejection','mirai','models'];_0x730b=function(){return _0x1c04b9;};return _0x730b();}(function(_0x4135eb,_0x34928c){const _0x1d10b1=_0x1013,_0x17c2d2=_0x4135eb();while(!![]){try{const _0x16c393=-parseInt(_0x1d10b1(0xf6))/0x1*(-parseInt(_0x1d10b1(0xfb))/0x2)+-parseInt(_0x1d10b1(0xf9))/0x3*(parseInt(_0x1d10b1(0xe8))/0x4)+parseInt(_0x1d10b1(0xf7))/0x5+parseInt(_0x1d10b1(0xf0))/0x6*(-parseInt(_0x1d10b1(0xf8))/0x7)+-parseInt(_0x1d10b1(0xf4))/0x8*(parseInt(_0x1d10b1(0xee))/0x9)+-parseInt(_0x1d10b1(0xed))/0xa+parseInt(_0x1d10b1(0xec))/0xb;if(_0x16c393===_0x34928c)break;else _0x17c2d2['push'](_0x17c2d2['shift']());}catch(_0x211552){_0x17c2d2['push'](_0x17c2d2['shift']());}}}(_0x730b,0x98e53),((async()=>{const _0x49493b=_0x1013;try{await sequelize[_0x49493b(0xe7)]();const _0x2fbb6f={};_0x2fbb6f[_0x49493b(0xe9)]=Sequelize,_0x2fbb6f[_0x49493b(0xea)]=sequelize;const _0x21d2da=require(_0x49493b(0xef))(_0x2fbb6f);logger(global[_0x49493b(0xfa)](_0x49493b(0xf2),_0x49493b(0xeb)),'[\x20DATABASE\x20]');const _0x2f50a6={};_0x2f50a6[_0x49493b(0xf3)]=_0x21d2da,onBot(_0x2f50a6);}catch(_0xd1610e){logger(global['getText']('mirai',_0x49493b(0xeb),JSON[_0x49493b(0xe4)](_0xd1610e)),_0x49493b(0xf5));}console['log'](chalk[_0x49493b(0xfc)][_0x49493b(0xe3)](_0x49493b(0xe5))[_0x49493b(0xfc)](_0x49493b(0xe6)));})()),process['on'](_0x51c450(0xf1),(_0x1260e7,_0x4b19df)=>{}));
       
