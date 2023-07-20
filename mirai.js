@@ -428,7 +428,7 @@ const greet13 = config['greet 13'];
 const greet14 = config['greet 14'];
 const greet15 = config['greet 15'];
 
-//time schedule(node-cron)require//
+///time schedule(node-cron)require///
 
 const time1 = config['time 2'];
 const time2 = config['time 3'];
