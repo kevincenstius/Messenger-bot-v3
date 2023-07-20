@@ -430,7 +430,6 @@ const greet15 = config['greet 15'];
 
 //time schedule(node-cron)require//
 
-const  = config['time 1'];
 const time1 = config['time 2'];
 const time2 = config['time 3'];
 const time3 = config['time 4'];
